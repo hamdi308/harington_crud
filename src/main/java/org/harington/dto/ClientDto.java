@@ -14,5 +14,5 @@ public class ClientDto {
     private String email;
     private String phone;
     private String address;
-    private List<CommandeDto> commandeDto;
+    private List<CommandeDto> ListcommandesDto;
 }

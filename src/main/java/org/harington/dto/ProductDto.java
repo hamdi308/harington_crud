@@ -10,4 +10,5 @@ import javax.persistence.Column;
 public class ProductDto {
     private String name;
     private Integer quantity;
+    private String description;
 }

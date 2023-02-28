@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -23,4 +24,6 @@ public class Client {
     private String phone;
     @Column(name="address")
     private String address;
+    @OneToMany(mappedBy = "id")
+    private List<Commande> Listcommandes;
 }

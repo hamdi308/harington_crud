@@ -11,6 +11,6 @@ import java.util.List;
 @Data
 @Builder
 public class CommandeDto {
-    private Client client;
-    private List<ProductDto> product;
+    private ClientDto clientDto;
+    private List<ProductDto> ListproductDto;
 }

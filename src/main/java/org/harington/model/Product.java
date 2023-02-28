@@ -19,5 +19,7 @@ public class Product {
     private String name;
     @Column(name = "quantity")
     private Integer quantity;
+    @Column(name = "description")
+    private String description;
 
 }

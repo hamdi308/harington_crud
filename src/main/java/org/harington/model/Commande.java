@@ -17,6 +17,6 @@ public class Commande {
     private Long id;
     @Column(name = "client")
     private Client client;
-    @Column(name="products"n )
+    @Column(name="products" )
     private List<Product> product;
 }

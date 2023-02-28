@@ -18,6 +18,7 @@ public class ProductDtoConverter implements Converter<ProductDto, Product> {
                 .name(productDto.getName())
                 .quantity(productDto.getQuantity())
                 .description(productDto.getDescription())
+                .category(productDto.getCategory())
                 .build();
     }
 }

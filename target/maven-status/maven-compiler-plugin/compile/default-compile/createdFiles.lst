@@ -1,0 +1,4 @@
+org\harington\CrudApplication.class
+org\harington\model\Product.class
+org\harington\model\Client.class
+org\harington\model\Commande.class

@@ -1,22 +1,23 @@
 package org.harington.model;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Table(name = "commandes")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@Builder
 @Entity
 public class Commande {
+    @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    @Column(name = "client")
+    @ManyToOne()
     private Client client;
-    @Column(name="products" )
+    @OneToMany(mappedBy = "id")
     private List<Product> product;
 }

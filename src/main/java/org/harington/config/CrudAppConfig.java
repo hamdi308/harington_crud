@@ -7,6 +7,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @ComponentScan(basePackages = "org.harington")
 @EnableJpaRepositories(basePackages = {"org.harington.repository"})
-
 public class CrudAppConfig {
 }

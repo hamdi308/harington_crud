@@ -46,7 +46,7 @@ public class ClientController {
     ResponseEntity<ClientDto> findClientById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(clientService.findClientById(id));
     }
-    @GetMapping(produces = APPLICATION_JSON_VALUE, path = "/v1/clients/find/{id}")
+    @GetMapping(produces = APPLICATION_JSON_VALUE, path = "/v1/clients/find/{name}/{secName}")
     ResponseEntity<ClientDto> findClientByNameSecName(@PathVariable("name") String name,@PathVariable("secName") String secName) {
         return ResponseEntity.ok(clientService.findClientByNameSecName(name,secName));
     }

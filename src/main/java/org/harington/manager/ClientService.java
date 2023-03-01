@@ -1,10 +1,8 @@
 package org.harington.manager;
 
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.harington.converter.ClientConverter;
 import org.harington.converter.ClientDtoConverter;
-import org.harington.converter.CommandeConverter;
 import org.harington.converter.CommandeDtoConverter;
 import org.harington.dto.ClientDto;
 import org.harington.model.Client;

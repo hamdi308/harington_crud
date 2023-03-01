@@ -51,11 +51,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.5.7.Final</version>
         </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>3.1.2</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>

@@ -5,6 +5,7 @@ import org.harington.dto.ClientDto;
 import org.harington.model.Client;
 import org.springframework.core.convert.converter.Converter;
 
+import java.util.Collections;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -21,7 +22,9 @@ public class ClientDtoConverter implements Converter<ClientDto, Client> {
                 .phone(clientDto.getPhone())
                 .email(clientDto.getEmail())
                 .address(clientDto.getAddress())
-                .Listcommandes(clientDto.getListcommandesDto().stream().map(cmdDto->CommandeDtoConverter.newInstance().convert(cmdDto)).collect(Collectors.toList()))
+                .Listcommandes(clientDto.getListcommandesDto() != null ?
+                        clientDto.getListcommandesDto().stream().map(cmdDto->CommandeDtoConverter.newInstance().convert(cmdDto)).collect(Collectors.toList()) :
+                        Collections.emptyList())
                 .build();
     }
 }

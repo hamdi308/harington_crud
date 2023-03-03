@@ -1,8 +1,10 @@
 org\harington\dto\CommandeDto$CommandeDtoBuilder.class
 org\harington\model\Client.class
+org\harington\controller\CommandeController.class
 org\harington\converter\ClientDtoConverter.class
 org\harington\model\Product$ProductBuilder.class
 org\harington\dto\ClientDto$ClientDtoBuilder.class
+org\harington\config\CrudAppConfig.class
 org\harington\manager\ProductService.class
 org\harington\manager\CommandeService.class
 org\harington\model\Product.class
@@ -13,13 +15,16 @@ org\harington\repository\ProductRepository.class
 org\harington\converter\ProductConverter.class
 org\harington\model\Commande.class
 org\harington\dto\CommandeDto.class
+org\harington\controller\ClientController.class
 org\harington\repository\ClientRepository.class
 org\harington\repository\CommandeRepository.class
+org\harington\controller\ProductController.class
 org\harington\dto\ProductDto$ProductDtoBuilder.class
 org\harington\converter\CommandeDtoConverter.class
 org\harington\converter\CommandeConverter.class
 org\harington\CrudApplication.class
 org\harington\manager\ClientService.class
 org\harington\model\Commande$CommandeBuilder.class
+org\harington\config\SwaggerConfig.class
 org\harington\converter\ProductDtoConverter.class
 org\harington\converter\ClientConverter.class

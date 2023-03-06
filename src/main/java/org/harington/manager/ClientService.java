@@ -33,7 +33,8 @@ public class ClientService {
         updatedClient.orElseThrow().setPhone(clientDto.getPhone());
         updatedClient.orElseThrow().setAddress(clientDto.getAddress());
         updatedClient.orElseThrow().setListcommandes(clientDto.getListcommandesDto().stream().map(cmdDto-> CommandeDtoConverter.newInstance().convert(cmdDto)).collect(Collectors.toList()));
-       return ClientConverter.newInstance().convert(updatedClient.stream().findFirst().orElseThrow());
+       clientRepository.save(updatedClient.stream().findFirst().orElseThrow());
+        return ClientConverter.newInstance().convert(updatedClient.stream().findFirst().orElseThrow());
     }
     public void deleteClient(Long id){
         clientRepository.deleteById(id);

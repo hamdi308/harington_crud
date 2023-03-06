@@ -1,19 +1,26 @@
 package org.harington.controller;
 
+import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.harington.dto.ClientDto;
 import org.harington.dto.CommandeDto;
 import org.harington.manager.CommandeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-@Component
+@Slf4j
+@RestController
+@RequestMapping("/api")
+@Validated
 @AllArgsConstructor
+@Api(tags = "Commandes")
 public class CommandeController {
     private final CommandeService commandeService;
     @GetMapping(produces = APPLICATION_JSON_VALUE, path = "/v1/commandes")

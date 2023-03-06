@@ -12,6 +12,8 @@ import java.util.List;
 @Data
 @Builder
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Commande {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

@@ -50,7 +50,7 @@ public class ClientController {
             @ApiResponse(code = 400, message = "Invalid request body"),
             @ApiResponse(code = 404, message = "Client not found")
     })
-    @PostMapping(produces = APPLICATION_JSON_VALUE, path = "/v1/clients/update")
+    @PutMapping(produces = APPLICATION_JSON_VALUE, path = "/v1/clients/update")
     ResponseEntity<ClientDto> UpdateClient(@RequestBody ClientDto clientDto) {
         return ResponseEntity.ok(clientService.UpdateClient(clientDto));
     }
